@@ -48,6 +48,8 @@
     ]
   },
   "devDependencies": {
+    "eslint": "^8.40.0",
+    "node-sass": "^7.0.3",
     "tailwindcss": "^3.3.2"
   }
 }
