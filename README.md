@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Unsplash_Clone 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Unsplash Clone project is a web application built using React.js, the Fetch API, and Tailwind CSS. The application aims to replicate the functionality and user experience of the popular image-sharing platform, Unsplash, by leveraging the Unsplash Live API.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Prequisites
+npm 
 
-### `npm start`
+```bash
+npm install npm@latest -g
+```
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Clone the repo 
 
-### `npm test`
+```bash
+  git clone https://github.com/Manya67/Unsplash_Clone
+```
+- Install NPM packages 
+```bash
+  npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## API Reference
 
-### `npm run build`
+#### Get all items
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+ GET /photos
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Parameter |Description                 |
+| :-------- | :------------------------- |
+| `count` | **The number of photos to return.**(Default: 1; max: 30)  |
+| `per_page`|**Number of items per page.** (Optional; default: 10)
+|`page`	|**Page number to retrieve.** (Optional; default: 1)|
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Get item
 
-### `npm run eject`
+```bash
+  GET /photos/${id}
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+| Parameter | Description                       |
+| :-------- | :-------------------------------- |
+| `id`      | **Required**. Id of item to fetch |
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Tech Stack
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Client:** React, TailwindCSS
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**Manya Jain**
+manyajain62002@gmail.com
 
-### Making a Progressive Web App
+**Project Link :** https://github.com/Manya67/Unsplash_Clone
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Live :** https://64678650a1ba741ff54ffbb6--unsplashbymanya.netlify.app/ 
